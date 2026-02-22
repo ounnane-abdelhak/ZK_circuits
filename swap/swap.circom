@@ -17,11 +17,11 @@ template CalculateTotal(n) {
 
 template QuinSelector(choices) {
   signal input in[choices];
-  signal input index;
+  signal input idx;
   signal output out;
   
   component lessThan = LessThan(4);
-  lessThan.in[0] <== index;
+  lessThan.in[0] <== idx;
   lessThan.in[1] <== choices;
   lessThan.out === 1;
 
@@ -31,7 +31,7 @@ template QuinSelector(choices) {
   for (var i = 0; i < choices; i ++) {
     eqs[i] = IsEqual();
     eqs[i].in[0] <== i;
-    eqs[i].in[1] <== index;
+    eqs[i].in[1] <== idx;
 
     calcTotal.in[i] <== eqs[i].out * in[i];
   }
