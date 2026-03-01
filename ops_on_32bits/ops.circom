@@ -131,10 +131,10 @@ template bitwiseXOR32(){
     component b2n = Bits2Num(32);
     component xors[32];
     for(var i=0;i<32;i++){
-        xors[i]=OR();
+        xors[i]=XOR();
         xors[i].a <== n2ba.out[i];
         xors[i].b <== n2bb.out[i]; 
-       1 - xors[i].out ==> b2n.in[i];       
+        xors[i].out ==> b2n.in[i];       
     }
     out <== b2n.out;
 }
