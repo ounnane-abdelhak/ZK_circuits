@@ -26,14 +26,7 @@ A collection of zero-knowledge circuits and cryptographic primitives implemented
 | `schnorr_protocol` | Schnorr signature scheme |
 | `zkvm` | Zero-knowledge virtual machine |
 
----
 
-## Stack
-
-- **Language** — Rust
-- **Curve** — BN254
-- **Libraries** — [arkworks](https://arkworks.rs)
-- **Proof system** — Groth16 (custom implementation)
 
 ---
 
