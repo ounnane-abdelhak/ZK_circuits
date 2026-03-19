@@ -65,6 +65,7 @@ A collection of zero-knowledge circuits implemented from scratch in [Circom](htt
 |---|---|
 | `plysol` | Polynomial solver circuit |
 | `zkvm` | Zero-knowledge virtual machine |
+| `voting_system` | Anonymous voting system using Zero-Knowledge proofs |
 
 ---
 
