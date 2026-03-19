@@ -48,7 +48,7 @@ A collection of zero-knowledge circuits implemented from scratch in [Circom](htt
 | `is_permutation` | Prove two arrays are permutations of each other |
 | `swap` | Conditional swap gate |
 | `increasingDistance` | Prove increasing distance constraints |
-
+| `merkle_tree` |merkle tree to prove you know a leaf in the tree without revealing which one |
 ### Control Flow
 | Circuit | Description |
 |---|---|
